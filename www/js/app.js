@@ -22,3 +22,11 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+.controller('Vatcontroller', ['$scope', function($scope){
+   $scope.result = 0;
+   $scope.calcutate = function(money){
+        $scope.result = money*7/100;
+   }
+  
+}])
